@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishing Well Wildflowers | Dunstable, MA</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --sage: #8da087;
+            --dusty-blue: #5b7696;
+            --dark-text: #333;
+            --glass: rgba(255, 255, 255, 0.85);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Background Image Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+                        url('https://images.unsplash.com/photo-1470137237906-d8a4f71e1966?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Main Content Card */
+        .container {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+            width: 100%;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* Logo Styling */
+        .logo {
+            max-width: 280px;
+            height: auto;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--dusty-blue);
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #444;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Call to Action Buttons */
+        .cta-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-insta {
+            background-color: var(--sage);
+            color: white;
+        }
+
+        .btn-email {
+            background-color: var(--dusty-blue);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            opacity: 0.9;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 { font-size: 1.8rem; }
+            .logo { max-width: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <!-- Replace 'logo.png' with your actual image file path -->
+            <img src="logo.png" alt="Wishing Well Wildflowers Logo" class="logo">
+            
+            <h1>Fresh, Local & Hand-Picked</h1>
+            
+            <p class="description">
+                Nestled in the heart of scenic Dunstable, Massachusetts, <strong>Wishing Well Wildflowers</strong> creates bespoke arrangements grown right here in our local soil. Each bouquet is hand-crafted with care, bringing a touch of nature’s magic to your home. Whether it's a thoughtful gift, a special celebration, or a simple way to brighten your kitchen table, our seasonal blooms are picked and styled just for you.
+            </p>
+
+            <div class="cta-group">
+                <a href="https://www.instagram.com/wishing.well.wildflowers" target="_blank" class="btn btn-insta">
+                    <i class="fab fa-instagram"></i> Follow on Instagram
+                </a>
+                <a href="mailto:catherine@wishingwellwildflowers.com" class="btn btn-email">
+                    <i class="fas fa-envelope"></i> Email Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
